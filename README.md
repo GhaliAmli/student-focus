@@ -421,6 +421,7 @@ If you find StudentFocus helpful, please consider:
 
 - ⭐ Starring the repository
 - 🐛 Reporting bugs
+- 💚 Follow me on X (formerly twitter)
 - 💡 Suggesting new features
 - 📢 Sharing with fellow students
 - 🤝 Contributing to the project
