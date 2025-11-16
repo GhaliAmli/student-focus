@@ -138,7 +138,7 @@ Whether you're managing assignments, preparing for exams, or planning your study
 ## 🎬 Demo
 
 ### Live Demo
-🔗 [View Live Demo]([https://your-demo-link.vercel.app](https://student-focus.vercel.app/))
+🔗 [View Live Demo]([https://student-focus.vercel.app/])
 
 ## 🚀 Installation
 
