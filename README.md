@@ -138,27 +138,7 @@ Whether you're managing assignments, preparing for exams, or planning your study
 ## 🎬 Demo
 
 ### Live Demo
-🔗 [View Live Demo](https://your-demo-link.vercel.app)
-
-### Screenshots
-
-<div align="center">
-
-#### Dashboard
-![Dashboard](./docs/screenshots/dashboard.png)
-
-#### Task Manager
-![Tasks](./docs/screenshots/tasks.png)
-
-#### Kanban Board
-![Kanban](./docs/screenshots/kanban.png)
-
-#### Analytics
-![Analytics](./docs/screenshots/analytics.png)
-
-</div>
-
----
+🔗 [View Live Demo]([https://your-demo-link.vercel.app](https://student-focus.vercel.app/))
 
 ## 🚀 Installation
 
@@ -170,7 +150,7 @@ Whether you're managing assignments, preparing for exams, or planning your study
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/studentfocus.git
+git clone https://github.com/GhaliAmli/student-focus.git
 cd studentfocus
 ```
 
@@ -421,8 +401,7 @@ SOFTWARE.
 - [shadcn/ui](https://ui.shadcn.com/) - Beautiful UI components
 - [Lucide](https://lucide.dev/) - Icon library
 - [Zustand](https://zustand-demo.pmnd.rs/) - State management
-- All open-source contributors
-
+- 
 ---
 
 ## 📞 Contact
