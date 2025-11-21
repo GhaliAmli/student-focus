@@ -117,18 +117,27 @@ export function useKonamiCode({ onComplete, enabled = true }: UseKonamiCodeOptio
  * Simulates the Konami Code sequence programmatically
  */
 export function triggerKonamiCodeDemo() {
+  if (typeof window === 'undefined') return;
+  
   console.log('🎮 Triggering Konami Code demo...');
   
   KONAMI_CODE.forEach((code, index) => {
     setTimeout(() => {
-      const event = new KeyboardEvent('keydown', {
-        code,
-        bubbles: true,
-      });
-      window.dispatchEvent(event);
-      console.log(`Key ${index + 1}/${KONAMI_CODE.length}: ${code}`);
+      try {
+        const event = new KeyboardEvent('keydown', {
+          code,
+          bubbles: true,
+          cancelable: true,
+        });
+        window.dispatchEvent(event);
+        console.log(`Key ${index + 1}/${KONAMI_CODE.length}: ${code}`);
+      } catch (error) {
+        console.error('Error dispatching event:', error);
+      }
     }, index * 200); // 200ms delay between each key
   });
+  
+  console.log('✅ Demo sequence started! Watch for confetti...');
 }
 
 // Expose demo function to window for easy testing in console

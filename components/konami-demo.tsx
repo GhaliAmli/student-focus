@@ -27,6 +27,11 @@ export function KonamiDemo() {
     { key: 'A', name: 'A Key' },
   ];
 
+  const handleDemoClick = () => {
+    console.log('Demo button clicked!');
+    triggerKonamiCodeDemo();
+  };
+
   return (
     <Card className="rounded-2xl shadow-sm border-dashed border-2 border-primary/30">
       <CardHeader>
@@ -76,7 +81,7 @@ export function KonamiDemo() {
         {/* Demo Button */}
         <div className="pt-2 border-t">
           <Button
-            onClick={triggerKonamiCodeDemo}
+            onClick={handleDemoClick}
             variant="outline"
             className="w-full rounded-xl"
           >
