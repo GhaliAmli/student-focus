@@ -8,10 +8,8 @@
 'use client';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Gamepad2, Zap, Ghost } from 'lucide-react';
-import { triggerKonamiCodeDemo } from '@/hooks/use-konami-code';
 
 export function KonamiDemo() {
   const konamiSequence = [
@@ -26,11 +24,6 @@ export function KonamiDemo() {
     { key: 'B', name: 'B Key' },
     { key: 'A', name: 'A Key' },
   ];
-
-  const handleDemoClick = () => {
-    console.log('Demo button clicked!');
-    triggerKonamiCodeDemo();
-  };
 
   return (
     <Card className="rounded-2xl shadow-sm border-dashed border-2 border-primary/30">
@@ -78,26 +71,23 @@ export function KonamiDemo() {
           </div>
         </div>
 
-        {/* Demo Button */}
+        {/* How to Try */}
         <div className="pt-2 border-t">
-          <Button
-            onClick={handleDemoClick}
-            variant="outline"
-            className="w-full rounded-xl"
-          >
-            <Gamepad2 className="h-4 w-4 mr-2" />
-            Demo Konami Code
-          </Button>
-          <p className="text-xs text-muted-foreground mt-2 text-center">
-            Or try typing the sequence manually!
-          </p>
+          <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
+            <p className="text-sm font-medium mb-2">🎮 How to Try:</p>
+            <ol className="text-xs text-muted-foreground space-y-1 list-decimal list-inside">
+              <li>Click anywhere on this page</li>
+              <li>Type the sequence shown above on your keyboard</li>
+              <li>Watch the magic happen! ✨</li>
+            </ol>
+          </div>
         </div>
 
         {/* Console Tip */}
         <div className="p-3 rounded-lg bg-muted/50">
           <p className="text-xs text-muted-foreground">
-            <strong>Developer tip:</strong> Open console and type{' '}
-            <code className="bg-muted px-1 rounded">triggerKonamiCode()</code> to test
+            <strong>Developer tip:</strong> Open console (F12) and type{' '}
+            <code className="bg-muted px-1 rounded">triggerKonamiCode()</code> to test programmatically
           </p>
         </div>
       </CardContent>
